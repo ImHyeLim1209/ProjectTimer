@@ -1,0 +1,26 @@
+.container{
+  height: 80%;
+  width: 60%;
+  background-color: #FFD9FA55;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.springDiv {
+  background-color: #FFD9FA55;
+}
+
+.summerDiv {
+  background-color: #D4F4FA55;
+}
+
+.autumnDiv {
+  background-color: #FAECC555;
+}
+
+.winterDiv {
+  background-color: #F6F6F655;
+}

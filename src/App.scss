@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./res/bkg-spring.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  &-intro {
+    font-size: large;
+  }
+}
+
+.spring {
+  background-image: url('./res/bkg-spring.jpg');
+}
+
+.summer {
+  background-image: url('./res/bkg-summer.jpg');
+}
+
+.autumn {
+  background-image: url('./res/bkg-autumn.jpg');
+}
+
+.winter {
+  background-image: url('./res/bkg-winter.jpg');
+}
