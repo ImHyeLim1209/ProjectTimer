@@ -1,6 +1,7 @@
 import React from 'react';
 import './scss/Item.scss';
 import Calendar from './Calendar';
+import Member from './Member';
 
 
 interface Props {
@@ -15,8 +16,8 @@ const Item: React.FC<Props> = ({column, value, type}) => {
       <div>{column}:&nbsp;&nbsp;</div>
       <div>
         {
-          type === "string"?
-          value:
+          type === "member"?
+          <Member></Member>:
           <Calendar></Calendar>
         }
       </div>

@@ -40,13 +40,9 @@ const Container: React.FC = () => {
     }
   }, [endtime]);
 
-  const timeHandler = (e: React.ChangeEvent<HTMLInputElement>) : void => {
-    alert(e.target.value);
-  }
-
   return <div className="container">
     <Timer></Timer>
-    <Detail timeHandler={timeHandler}></Detail>
+    <Detail></Detail>
   </div>
 }
 
