@@ -1,17 +1,16 @@
+//https://lgphone.tistory.com/15?category=911601
+import { createAction, ActionType  } from 'typesafe-actions';
 import { Time } from "../reducers/initialState";
-export const CHANGE_ENDTIME = "CHANGE_ENDTIME" as const; //action.type이 string이 아니라 "CHANGE_ENDTIME"으로 추론됨
 
-export interface action {
-  type: string,
-  payload: object
-}
+// export interface Action {
+//   type: string,
+//   payload: object
+// }
 
-export const changeEndTime = (time: Time) : action => {
-  return {
-    type: CHANGE_ENDTIME,
-    payload: time
-  }
-}
+export const CHANGE_ENDTIME = "CHANGE_ENDTIME";
+export const changeEndTime = createAction(CHANGE_ENDTIME)<Time>();
 
-type TimeAction =
-  | ReturnType<typeof changeEndTime>;
+const actions = {changeEndTime};
+
+export type TimeAction = 
+  | ActionType<typeof actions>;

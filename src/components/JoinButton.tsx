@@ -22,6 +22,7 @@ const JoinButton : React.FC = () => {
       <RiTeamFill className="join" size="36"/>:
       <RiUser3Fill className="join" size="36"/>}
     </button>
+    
   )
 }
 

@@ -8,13 +8,11 @@ const App: React.FC = () => {
   const {endtime} = state;
 
   useEffect(() => {
-
     const app = document.querySelector('.App');
     const month = endtime.getDateObject().getMonth();
     const seasons = ['spring', 'summer', 'autumn', 'winter'];
 
     app?.classList.remove(...seasons);
-
     switch(month) {
       case 11: //12월
       case 0: //1월

@@ -4,6 +4,15 @@ import Timer from './Timer';
 import Detail from './Detail'
 import './scss/Container.scss';
 
+//Generics : 1. 상태가 null일 수도 아닐 수도 있을 때  2. 상태의 타입이 까다로운 구조를 가진 객체이거나 배열
+//case1. 
+//type Information = { name: string; description: string };
+//const [info, setInformation] = useState<Information | null>(null);
+
+//case2.
+//type Todo = { id: number; text: string; done: boolean };
+//const [todos, setTodos] = useState<Todo[]>([]);
+
 const Container: React.FC = () => {
   const state = useSelector((state:RootStateOrAny) => state.timeReducer);
   const {endtime} = state;
